@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loja</title>
+	<link rel="icon" type="image" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/1024px-Palmeiras_logo.svg.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<style type="text/css">
+	
+	body{
+		margin: 0;
+		background: rgb(191, 189, 189);
+	}
+
+	nav{
+		position: sticky;
+		top: 0;
+		background-color: rgb(45, 92, 57);
+		color: white;
+		height: 30px;
+		padding: 15px;
+		font-family: serif;
+		font-size: 25px;
+		letter-spacing: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-items: center;
+		text-shadow: 3px 3px 10px black;
+	}
+
+	.logo{
+		position: absolute;
+		display: inline-block;
+		left: 40px;
+		top: 6px;
+		width: 50px;
+	}
+
+	.logo:hover{
+		width: 56px;
+		left: 37px;
+		top: 3px;
+	}
+
+	.material-symbols-outlined{
+		position: absolute;
+		display: inline-block;
+		left: 96%;
+		top: 19px;
+	}
+
+	.produtos{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+		height: 400px;
+		background-color: white;
+		box-shadow: 4px 4px 15px gray;
+	}
+
+/*camisa 1*/
+	.c1{
+		position: relative;
+		align-items: center;
+		padding: 5px;
+		margin-top: 30px;
+		background-color: white;
+		width: 300px;
+		height: 300px;
+		font-size: 20px;
+		font-style: serif; 
+		color: rgb(85, 110, 82);
+		overflow: hidden;
+	}
+
+	.c1 img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: opacity 0.3s ease;
+	}
+
+	.c1:hover .camisa1{
+		opacity: 0;
+	}
+
+
+	.c1:hover{
+		background-image: url(https://lojapalmeiras.vteximg.com.br/arquivos/ids/181597-1000-1000/_0070_777229_01_bv.jpg?v=638418777838700000);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+/*camisa 2*/
+
+	.c2{
+		position: relative;
+		align-items: center;
+		padding: 5px;
+		margin-top: 30px;
+		background-color: white;
+		width: 300px;
+		height: 300px;
+		font-size: 20px;
+		font-style: serif; 
+		color: rgb(85, 110, 82);
+		overflow: hidden;
+	}
+
+	.c2 img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: opacity 0.3s ease;
+	}
+
+	.c2:hover .camisa2{
+		opacity: 0;
+	}
+
+
+	.c2:hover{
+		background-image: url(https://lojapalmeiras.vteximg.com.br/arquivos/ids/184038-1000-1000/_0054_777237_01_bv.jpg?v=638435232161830000);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	/*camisa 3*/
+
+	.c3{
+		position: relative;
+		align-items: center;
+		padding: 5px;
+		margin-top: 30px;
+		background-color: white;
+		width: 300px;
+		height: 300px;
+		font-size: 20px;
+		font-style: serif; 
+		color: rgb(85, 110, 82);
+		overflow: hidden;
+	}
+
+	.c3 img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: opacity 0.3s ease;
+	}
+
+	.c3:hover .camisa3{
+		opacity: 0;
+	}
+
+
+	.c3:hover{
+		background-image: url(https://lojapalmeiras.vteximg.com.br/arquivos/ids/181540-1000-1000/_0058_777235_01_bv.jpg?v=638418777576600000);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	/*camisa 4*/
+
+	.c4{
+		position: relative;
+		align-items: center;
+		padding: 5px;
+		margin-top: 30px;
+		background-color: white;
+		width: 300px;
+		height: 300px;
+		font-size: 20px;
+		font-style: serif; 
+		color: rgb(85, 110, 82);
+		overflow: hidden;
+	}
+
+	.c4 img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: opacity 0.3s ease;
+	}
+
+	.c4:hover .camisa4{
+		opacity: 0;
+	}
+
+
+	.c4:hover{
+		background-image: url(https://lojapalmeiras.vteximg.com.br/arquivos/ids/181550-1000-1000/_0060_777234_01_bv.jpg?v=638418777620330000);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	h2{
+		font-size: 20px;
+	}
+
+	.preco{
+		display: flex;
+		justify-content: center;
+		width: 30%;
+		font-size: 20px;
+		border-style: solid;
+		border-width: 0.5px;
+		border-color: black;
+		color: white;
+		border-radius: 20px;
+		background-color: rgb(8, 117, 12);
+	}
+
+	.preco:hover{
+		width: 31%;
+		font-size: 21px;
+		cursor: pointer;
+	}
+
+	.quadProd{
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.camisetas{
+		position: relative;
+		top: 22px;
+		z-index: 1;
+		margin-left: 4%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding: 10px;
+		width: 15%;
+		font-size: 18px;
+		letter-spacing: 3px;
+		margin-top: 100px;
+		margin-bottom: 0%;
+		background: linear-gradient(to right, #6dc785, #4aa161, #4a7054);
+		color: white;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 0.5px;
+		border-color: rgb(181, 165, 20);
+	}
+
+</style>
+
+
+
+
+
+
+
+
+<body>
+	<nav>
+		<span><a href="index.html"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/2048px-Palmeiras_logo.svg.png"></a></span>
+		<span class="material-symbols-outlined">shopping_cart</span>
+		<span>PRODUTOS</span>
+	</nav>
+
+	<div class="camisetas">CAMISETAS</div>
+
+	<div class="produtos">
+
+		<span class="quadProd">
+		<div class="c1">
+				<div class="camisa1">
+					<img src="https://lojapalmeiras.vteximg.com.br/arquivos/ids/181253-1000-1000/_0069_777229_01.jpg?v=638418776090130000">
+				</div>
+		</div>
+			<div class="preco">R$ 100,00</div>
+		</span>
+
+		<span class="quadProd">
+		<div class="c2">
+				<div class="camisa2">
+					<img src="https://lojapalmeiras.vteximg.com.br/arquivos/ids/182880-1000-1000/_0051_777238_01.jpg?v=638434330594070000">
+				</div>
+		</div>
+			<div class="preco">R$ 100,00</div>
+		</span>
+
+		<span class="quadProd">
+		<div class="c3">
+				<div class="camisa3">
+					<img src="https://lojapalmeiras.vteximg.com.br/arquivos/ids/181196-1000-1000/_0057_777235_01.jpg?v=638418775801830000">
+				</div>
+		</div>
+			<div class="preco">R$ 100,00</div>
+		</span>
+
+		<span class="quadProd">
+		<div class="c4">
+				<div class="camisa4">
+					<img src="https://lojapalmeiras.vteximg.com.br/arquivos/ids/181206-1000-1000/_0059_777234_01.jpg?v=638418775847030000">
+				</div>
+		</div>
+			<div class="preco">R$ 100,00</div>
+	</span>
+	</div>
+
+
+</body>
+</html>
